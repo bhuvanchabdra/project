@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>home</title>
+    <link rel="icon" href="./images/logo.svg" />
+</head>
+
+<body>
+    <!-- *===================================  SIGN IN AND SIGN UP PAGES =========================== -->
+    <section class="sign-up-page-section">
+        <div class="sign-up-page w-100 mw-736">
+            <div class="sign-hed desk-show">
+                <h6 class="fx-14 gr">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h6>
+            </div>
+            <div class="signup-from-img-frame mk-flex-wrap  bg-white d-flex align-items-center justify-content-center position-relative">
+                <img onclick="hideSignup()" src="./images/cancel.png" class="cancel-btn desk-show" alt="">
+                <div class="sign-up-box bg-white">
+                    <h5 class="fs-24-18 d-flex align-items-center justify-content-between">Create Account
+                        <img onclick="hideSignup()" class="mb-show" src="./images/black-cancle.png" alt="">
+                    </h5>
+                    <form onsubmit="createaccountup(e)">
+                        <div class="form-table mt-4">
+                            <div class="w-100 d-flex align-items-center justify-content-center">
+                                <div class="w-50">
+                                    <input type="text" required class="input-box" placeholder="First Name">
+                                </div>
+                                <div class="w-50">
+                                    <input type="text" required class="input-box" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <input type="email" class="input-box w-100" placeholder="Email">
+                            </div>
+                            <div class="w-100 d-flex input-box p-0 pe-3 align-items-center">
+                                <input type="password" class=" bg-transparent border-0 p-3 fx-15 blck-8A8 shadow-none w-100" placeholder="Password">
+                                <img src="./images/eye.svg" alt="icon">
+                            </div>
+                        </div>
+                        <div class="w-100 mb-1">
+                            <input type="password" class="input-box w-100" placeholder="Confirm Password">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button type="submit" class="primary-btn desk-100 text-white mt-3 mb-3">Create Account</button>
+                            <spam class="fx-13 mb-show cursor-pointer" onclick="gotosignin()">or, Sign In</spam>
+
+                        </div>
+                    </form>
+                    <div class="sign-with-box mt-2 ">
+                        <img src="./images/face-book.png" alt="">
+                        <span class="fx-14 text-black">Sign up with Facebook</span>
+                    </div>
+                    <div class="sign-with-box mt-2">
+                        <img src="./images/Google.png" alt="">
+                        <span class="fx-14 text-black">Sign up with Google</span>
+                    </div>
+                </div>
+                <div class="sign-up-box bg-white pad-top-mb">
+                    <div class="have-account-sec desk-show fx-14  text-end">
+                        Already have an account?
+                        <span class="blue-2F6">Sign In</span>
+                    </div>
+                    <div class="img-sign-up desk-show">
+                        <img class="w-100" src="./images/create-accoutn-page.png" alt="">
+                    </div>
+                    <p class="fx-11 mb-0 ">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- *===================================  SIGN Up AND SIGN UP PAGES =========================== -->
+    <!-- *===================================  SIGN IN AND SIGN UP PAGES =========================== -->
+    <section class="sign-in-page-section">
+        <div class="sign-up-page w-100 mw-736">
+            <div class="sign-hed desk-show">
+                <h6 class="fx-14 gr ">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</h6>
+            </div>
+            <div class="signup-from-img-frame  bg-white d-flex align-items-center justify-content-center position-relative">
+                <img onclick="hideSignin()" src="./images/cancel.png" class="cancel-btn desk-show" alt="">
+                <div class="sign-up-box bg-white">
+                    <h5 class="fs-24-18 d-flex align-items-center justify-content-between">Sign In
+                        <img onclick="hideSignin()" class="mb-show" src="./images/black-cancle.png" alt="">
+                    </h5>
+                    <!-- <form onsubmit="createaccountIn(e)"> -->
+                    <div class="form-table mt-4">
+
+                        <div class="w-100">
+                            <input type="email" required class="input-box w-100" placeholder="Email">
+                        </div>
+                        <div class="w-100 d-flex input-box p-0 pe-3 align-items-center">
+                            <input type="password" required class=" bg-transparent border-0 p-3 fx-15 blck-8A8 shadow-none w-100" placeholder="Password">
+                            <img src="./images/eye.svg" alt="icon">
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button class="primary-btn desk-100 text-white mt-3 mb-3">   <a class=" anker fw-bold" href="./loginpage.html">Sdign In</a></button>
+                        <spam class="fx-13 mb-show cursor-pointer" onclick="gotosignup()"> or, Create Account</spam>
+                    </div>
+
+                    <!-- </form> -->
+                    <div class="sign-with-box mt-2">
+                        <img src="./images/face-book.png" alt="">
+                        <span class="fx-14 text-black">Sign up with Facebook</span>
+                    </div>
+                    <div class="sign-with-box mt-2">
+                        <img src="./images/Google.png" alt="">
+                        <span class="fx-14 text-black">Sign up with Google</span>
+                    </div>
+                    <div class="firgot-pasword w-100 d-flex align-items-center justify-content-center py-3">
+                        <span class="fs-16-14">Forgot Password?</span>
+                    </div>
+                </div>
+                <div class="sign-up-box bg-white desk-show">
+                    <div class="have-account-sec fx-14  text-end">
+                        Don’t have an account yet?
+                        <span class="blue-2F6">Create new for free!</span>
+                    </div>
+                    <div class="img-sign-up mt-4">
+                        <img class="w-100" src="./images/siginIn.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- *===================================  SIGN IN AND SIGN UP PAGES =========================== -->
+
+
+
+    <!-- * ======================  HESDER SECTION START ============================= -->
+    <header class="hesder-section w-100 desk-show">
+        <div class="container custom-header-conatiner">
+            <div class="header-frame w-100">
+                <img src="./images/logo.svg" alt="" />
+                <div class="serch-bar d-flex align-items-center gap-3">
+                    <img src="./images/baseline-search-24px.png" alt="icon" />
+                    <input type="text" class="border-0 shadow-none bg-transparent fx-14 fw-500 black-5C5" placeholder="Search for your favorite groups in ATG" />
+                </div>
+                <div class="dropdown onclick-login-hide ">
+                    <button class="btn btn-secondary bg-transparent border-0 dropdown-toggle fs-6 fw-bold lh-21 black-2E2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Create account.
+              <span class="blue-2F6">It’s free!</span>
+            </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item w-100 h-100">Account</a>
+                        </li>
+                        <li>
+                            <span onclick="hideSignin()" class="dropdown-item   cursor-pointer w-100 h-100">Login</span>
+                        </li>
+                        <li>
+                            <span onclick="hideSignup()" class="dropdown-item cursor-pointer w-100 h-100">Sign In</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="img-name  align-items-center gap-4 onclick-login-show ">
+                    <img class="profile-img" src="./images/profile.png" alt="img" />
+                    <span class="fs-18-12 fw-bold text-black">Sarthak Kamra</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- * ======================  HESDER SECTION END ============================= -->
+
+    <!-- * -------------------------- HERO  mb SECTION START --------------------------- -->
+    <section class="home-hero-section top-0">
+        <div class="container h-100">
+            <div class="home-sub-hed py-3 mt-0 position-relative mt-0 z-1 align-item-center justify-content-between mb-flex w-100">
+                <img src="./images/arrow_back_24px_outlined.svg" alt="" />
+                <button onclick="hideSignin()" class="secondary-btn bg-transparent text-white fw-500">
+            Join Group
+          </button>
+            </div>
+            <div class="hero-content h-100 d-flex flex-column align-items-start justify-content-end">
+                <h4 class="fs-36-17 mb-1">Computer Engineering</h4>
+                <p class="fs-18-12 mb-0">142,765 Computer Engineers follow this</p>
+            </div>
+        </div>
+    </section>
+    <!-- * -------------------------- HERO SECTION END --------------------------- -->
+
+    <!-- ========================== SECOND SECTION START =========================== -->
+    <section class="secont-data-section">
+        <div class="container">
+            <div class="sub-nav-frame d-flex justify-content-between align-items-center">
+                <ul class="nav-links-list p-0">
+                    <li class="activ-lis">All Posts(32)</li>
+                    <li>Article</li>
+                    <li>Event</li>
+                    <li>Education</li>
+                    <li>Job</li>
+                </ul>
+                <div class="button-frame d-flex gap-3 align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary border-0 dropdown-toggle bg-EDE px-3 py-2 text-dark fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Write a Post
+              </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="desk-flex btn btn-primary px-3 py-2 d-flex align-items-center justify-content-center gap-2">
+              <img src="./images/group-icon.png" alt="" />
+              Join Group
+            </button>
+                </div>
+            </div>
+            <div class="data-content-frame d-flex justify-content-center">
+                <div class="data-left p-2">
+                    <div class="artical-box">
+                        <img class="articla-img" src="./images/artical1-img.png" alt="" />
+                        <div class="text-frame">
+                            <h4>
+                                <img class="desk-show mt-3" src="./images/ArticleIimg.png" alt="" />
+                                <img class="mb-show mt-2" src="./images/ArticleIimg.png" alt="" />
+                            </h4>
+
+                            <div class="articl-heading d-flex justify-content-between align-items-start">
+                                <h3 class="fs-22-16">
+                                    What if famous brands had regular fonts? Meet RegulaBrands!
+                                </h3>
+                                <div class="dropdown three-dotes">
+                                    <button class="btn btn-secondary bg-transparent border-0 dropdown-toggle text-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./images/dots....png" alt="" />
+                    </button>
+                                    <ul class="dropdown-menu three-dot-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Login</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Sign up</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">more</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <p class="fs-19-14">
+                                I’ve worked in UX for the better part of a decade. F..
+                            </p>
+                            <!-- <button class="secondary-btn2 w-100 bg-transparent text-danger fw-bold ">Visit Website</button> -->
+                            <div class="profile-frame d-flex align-items-center justify-content-between">
+                                <div class="img-name d-flex align-items-center gap-4">
+                                    <img class="profile-img" src="./images/profile.png" alt="img" />
+                                    <span class="fs-18-12 fw-bold text-black">Sarthak Kamra <br>
+
+                                    <div class="no-viesw mb-flex align-items-center justify-content-between gap-3">
+                                        <!-- <img src="./images/visibility_24px_outlined.png" alt="" /> -->
+                                        <span class="fs-18-12 text-black">1.4k views</span>
+                                </div>
+                                </span>
+                            </div>
+                            <div class="views-share d-flex align-items-center gap-5">
+                                <div class="no-viesw desk-flex align-items-center justify-content-between gap-3">
+                                    <img src="./images/visibility_24px_outlined.png" alt="" />
+                                    <span class="fs-18-12 text-black">1.4k views</span>
+                                </div>
+                                <img src="./images/share.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="artical-box">
+                    <img class="articla-img" src="./images/door.png" alt="" />
+                    <div class="text-frame">
+                        <h4>
+                            <img class="desk-show mt-3" src="./images/Education.png" alt="" />
+                            <img class="mb-show mt-2" src="./images/Education(Mb).png" alt="" />
+                        </h4>
+
+                        <div class="articl-heading d-flex justify-content-between align-items-start">
+                            <h3 class="fs-22-16">
+                                What if famous brands had regular fonts? Meet RegulaBrands!
+                            </h3>
+                            <div class="dropdown three-dotes">
+                                <button class="btn btn-secondary bg-transparent border-0 dropdown-toggle text-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./images/dots....png" alt="" />
+                    </button>
+                                <ul class="dropdown-menu three-dot-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Login</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Sign up</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">more</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="fs-19-14">
+                            I’ve worked in UX for the better part of a decade. F..
+                        </p>
+                        <!-- <button class="secondary-btn2 w-100 bg-transparent text-danger fw-bold ">Visit Website</button> -->
+                        <div class="profile-frame d-flex align-items-center justify-content-between">
+                            <div class="img-name d-flex align-items-center gap-4">
+                                <img class="profile-img" src="./images/Rectangle 3.png" alt="img" />
+                                <span class="fs-18-12 fw-bold text-black">Sarthak Kamra
+                      <br />
+                      <div
+                        class="no-viesw mb-flex align-items-center justify-content-between gap-3"
+                      >
+                        <!-- <img
+                          src="./images/visibility_24px_outlined.png"
+                          alt=""
+                        /> -->
+                        <span class="fs-18-12 text-black">1.4k views</span>
+                            </div>
+                            </span>
+                        </div>
+                        <div class="views-share d-flex align-items-center gap-5">
+                            <div class="no-viesw desk-flex align-items-center justify-content-between gap-3">
+                                <img src="./images/visibility_24px_outlined.png" alt="" />
+                                <span class="fs-18-12 text-black">1.4k views</span>
+                            </div>
+                            <img src="./images/share.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="artical-box mh-572">
+                <img class="articla-img" src="./images/car.png" alt="" />
+                <div class="text-frame">
+                    <h4>
+                        <img class="desk-show mt-3" src="./images/MeetupDesk.png" alt="" />
+                        <img class="mb-show mt-2" src="./images/MeetupMb.png" alt="" />
+                    </h4>
+
+                    <div class="articl-heading d-flex justify-content-between align-items-start">
+                        <h3 class="fs-22-16">
+                            What if famous brands had regular fonts? Meet RegulaBrands!
+                        </h3>
+                        <div class="dropdown three-dotes">
+                            <button class="btn btn-secondary bg-transparent border-0 dropdown-toggle text-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./images/dots....png" alt="" />
+                    </button>
+                            <ul class="dropdown-menu three-dot-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Login</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Sign up</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">more</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="fs-19-14">
+                        I’ve worked in UX for the better part of a decade. F..
+                    </p>
+                    <div class="date-location d-flex align-items-center gap-5">
+                        <div class="date d-flex align-items-center justify-content-center gap-2">
+                            <img src="./images/calender.png" alt="" />
+                            <span class="fs-15-12">Fri, 12 Oct, 2018</span>
+                        </div>
+                        <div class="d-block justify-content-center align-items-center">
+                            <img src="./images/location.png" alt="" />
+                            <span class="fs-15-12">Ahmedabad, India</span>
+                        </div>
+                    </div>
+                    <button class="secondary-btn2 w-100 bg-transparent text-danger fw-bold">
+                  Visit Website
+                </button>
+                    <div class="profile-frame d-flex align-items-center justify-content-between">
+                        <div class="img-name d-flex align-items-center gap-4">
+                            <img class="profile-img" src="./images/Rectangle 3 (1).png" alt="img" />
+                            <span class="fs-18-12 fw-bold text-black">Sarthak Kamra
+                      <br />
+                      <div
+                        class="no-viesw mb-flex align-items-center justify-content-between gap-3"
+                      >
+                        <!-- <img
+                          src="./images/visibility_24px_outlined.png"
+                          alt=""
+                        /> -->
+                        <span class="fs-18-12 text-black">1.4k views</span>
+                        </div>
+                        </span>
+                    </div>
+                    <div class="views-share d-flex align-items-center gap-5">
+                        <div class="no-viesw desk-flex align-items-center justify-content-between gap-3">
+                            <img src="./images/visibility_24px_outlined.png" alt="" />
+                            <span class="fs-18-12 text-black">1.4k views</span>
+                        </div>
+                        <img src="./images/share.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="artical-box mh-572">
+            <!-- <img class="articla-img" src="./images/car.png" alt=""> -->
+            <div class="text-frame">
+                <h4>
+                    <img class="desk-show mt-3" src="./images/Jobdesk.png" alt="" />
+                    <img class="mb-show mt-2" src="./images/JobMb.png" alt="" />
+                </h4>
+
+                <div class="articl-heading d-flex justify-content-between align-items-start">
+                    <h3 class="fs-22-16">
+                        What if famous brands had regular fonts? Meet RegulaBrands!
+                    </h3>
+                    <div class="dropdown three-dotes">
+                        <button class="btn btn-secondary bg-transparent border-0 dropdown-toggle text-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./images/dots....png" alt="" />
+                    </button>
+                        <ul class="dropdown-menu three-dot-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Login</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Sign up</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="fs-19-14">
+                    I’ve worked in UX for the better part of a decade. F..
+                </p>
+                <div class="date-location d-flex align-items-center gap-5">
+                    <div class="date d-flex align-items-center justify-content-center gap-2">
+                        <img src="./images/calender.png" alt="" />
+                        <span class="fs-15-12">Fri, 12 Oct, 2018</span>
+                    </div>
+                    <div class="d-block justify-content-center align-items-center">
+                        <img src="./images/location.png" alt="" />
+                        <span class="fs-15-12">Ahmedabad, India</span>
+                    </div>
+                </div>
+                <button class="secondary-btn2 w-100 bg-transparent color-02B fw-bold">
+                  Visit Website
+                </button>
+                <div class="profile-frame d-flex align-items-center justify-content-between">
+                    <div class="img-name d-flex align-items-center gap-4">
+                        <img class="profile-img" src="./images/Rectangle 3 (2).png" alt="img" />
+                        <span class="fs-18-12 fw-bold text-black">Sarthak Kamra
+                      <br />
+                      <div
+                        class="no-viesw mb-flex align-items-center justify-content-between gap-3"
+                      >
+                        <!-- <img
+                          src="./images/visibility_24px_outlined.png"
+                          alt=""
+                        /> -->
+                        <span class="fs-18-12 text-black">1.4k views</span>
+                    </div>
+                    </span>
+                </div>
+                <div class="views-share d-flex align-items-center gap-5">
+                    <div class="no-viesw desk-flex align-items-center justify-content-between gap-3">
+                        <img src="./images/visibility_24px_outlined.png" alt="" />
+                        <span class="fs-18-12 text-black">1.4k views</span>
+                    </div>
+                    <img src="./images/share.png" alt="" />
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="data-right p-2 desk-show">
+            <div class="location-groups-frame w-100 mw-243  float-end">
+                <div class="location-input-box w-100 border-bottom border-dark d-flex py-2 mb-2 align-items-center justify-content-between">
+                    <img src="./images/location.png" alt="">
+                    <input class="fx-14 text-dark border-0 shadow-none  fw-bold" type="text" placeholder="Noida, India">
+                    <img src="./images/edit.png" id="edit" alt="edit">
+                </div>
+                <div class="varning-box d-flex align-items-center justify-content-center mt-4  gap-3">
+                    <img src="./images/!.png" alt="img">
+                    <span class="fx-12 varing-para">Your location will help us serve better and extend a personalised experience.</span>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- ========================== SECOND SECTION END =========================== -->
+    <script src="./java-script/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
+</html>

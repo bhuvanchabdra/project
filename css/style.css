@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+
+
+/* * COMMON CSS START */
+
+.black-5C5 {
+    color: #5C5C5C !important;
+}
+
+.black-2E2 {
+    color: #2E2E2E !important;
+}
+
+.blue-2F6 {
+    color: #2F6CE5 !important;
+}
+
+.bg-EDE {
+    background: #EDEEF0 !important;
+}
+
+.color-02B {
+    color: #02B875 !important;
+}
+
+.varing-para {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+.mw-243 {
+    max-width: 243px;
+}
+
+.mw-736 {
+    max-width: 756px;
+}
+
+
+/* line-height */
+
+.lh-21 {
+    line-height: 21px !important;
+}
+
+
+/* font */
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fx-14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.fs-36-17 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+
+.fs-18-12 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.fx-12 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.mb-show,
+.mb-flex {
+    display: none !important;
+}
+
+.primary-btn {
+    background: #2F6CE5;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.secondary-btn {
+    border: 0.8px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+.secondary-btn2 {
+    background: #FFFFFF;
+    border: 0.7px dashed #A9AEB8;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+
+/* * COMMON CSS END */
+
+
+/* ? ================= HEADER CSS START ======================== */
+
+.hesder-section {
+    height: 72px;
+}
+
+.custom-header-conatiner {
+    height: 100%;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.header-frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.serch-bar {
+    background: #F2F2F2;
+    border-radius: 21px;
+    padding: 10px 14px;
+    max-width: 360px;
+    width: 100%;
+}
+
+
+/* ? ================= HEADER CSS END ======================== */
+
+
+/*  */
+
+
+/* ?================== HOME HERO SECTION START ======================== */
+
+.home-hero-section {
+    height: 70vh;
+    max-height: 440px;
+    background: url(../images/hero-bg-home.png) no-repeat center;
+    background-size: cover;
+    padding-bottom: 80px;
+}
+
+
+/* ?================== HOME HERO SECTION END ======================== */
+
+
+/* ?================== HOME SECON SECTION START ======================== */
+
+.nav-links-list {
+    list-style: none;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+.nav-links-list>li {
+    float: left;
+    margin-right: 1.2vw;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #8A8A8A;
+    margin-bottom: 0;
+    height: 100%;
+    padding-bottom: 18px;
+}
+
+.nav-links-list>li:first-child {
+    border-bottom: 1px solid black;
+}
+
+.activ-lis {
+    color: #000000 !important;
+}
+
+.sub-nav-frame {
+    padding: 40px 0 15px 0;
+    border-bottom: 1px solid #E0E0E0;
+    ;
+}
+
+.fs-16-14 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.data-left {
+    width: 70%;
+    padding: 0 !important;
+}
+
+.data-right {
+    width: 30%;
+}
+
+.artical-box {
+    width: 100%;
+    max-width: 692px;
+    /* max-height: 472px; */
+    /* height: 100%; */
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.articla-img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+}
+
+.articl-heading {}
+
+.articl-heading>h3 {
+    width: 84%;
+    margin: 10px 0;
+}
+
+.articl-heading>.three-dotes {
+    display: flex;
+    align-items: start;
+    padding-right: 20px;
+    justify-content: center;
+}
+
+.fs-22-16 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    /* or 30px */
+    color: #000000;
+}
+
+.fs-19-14 {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 25px;
+    color: #5C5C5C;
+}
+
+.text-frame {
+    padding: 14px 20px;
+}
+
+.profile-frame {
+    margin-top: 32px;
+}
+
+.three-dot-menu {
+    right: 0px !important;
+    inset: 0px auto auto !important;
+}
+
+.fs-15-12 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: -0.01em;
+    color: #212529;
+}
+
+.date-location {
+    padding: .1vw 0 1.5vw 0;
+}
+
+.mh-572 {
+    max-height: 572px !important;
+}
+
+
+/* ?================== HOME SECOND SECTION END ======================== */
+
+
+/* ?======================= SIGIN IN PAG CSS START ==================== */
+
+.sign-up-page-section,
+.sign-in-page-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.sign-hed {
+    background: #EFFFF4;
+    border-radius: 8px 8px 0px 0px;
+    padding: 1.03vw 3%;
+    text-align: center;
+}
+
+.green-008 {
+    color: #008A45 !important;
+}
+
+.sign-up-box {
+    width: 50%;
+}
+
+.signup-from-img-frame {
+    padding: 1.65vw 1.9vw 1.9vw 1.9vw;
+}
+
+.fx-11 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.008em;
+    color: #000000;
+    opacity: 0.6;
+}
+
+.fs-24-18 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.input-box {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height, or 107% */
+    color: #8A8A8A;
+    background: #F7F8FA;
+    border: 1px solid #D9D9DB;
+    padding: 15px 12px;
+    width: 100%;
+}
+
+.fx-15 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.blck-8A8 {
+    color: #8A8A8A;
+}
+
+.sign-with-box {
+    background: #FFFFFF;
+    border: 0.6px solid #D9D9DB;
+    border-radius: 2px;
+    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cancel-btn {
+    position: absolute;
+    right: -10px;
+    top: -95px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.fx-13 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #495057;
+}
+
+.desk-100 {
+    width: 100%;
+}
+
+.pad-top-mb {
+    padding-top: 18px;
+    max-width: 240px;
+}
+
+.onclick-login {
+    display: none;
+}
+
+.onclick-login-show {
+    display: none;
+}
+
+.fx-18 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.follow,
+.follow1,
+.follow2,
+.follow3,
+.follow4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    background: #EDEEF0;
+    border-radius: 14px;
+    padding: 4px 12px;
+    text-align: center;
+    color: #000000;
+}
+
+.grupflow-img {
+    width: 38px;
+    height: 38px;
+}
+
+#follow,
+#follow1,
+#follow2,
+#follow3,
+#follow4 {
+    display: none;
+}
+
+#follow:checked~.lable>.follow,
+#follow1:checked~.lable1>.follow1,
+#follow2:checked~.lable2>.follow2,
+#follow3:checked~.lable3>.follow3,
+#follow4:checked~.lable4>.follow4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: right;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 14px;
+}
+
+
+/* .signup-from-img-frame::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -100px;
+    width: 24px;
+    height: 24px;
+    background: url(../images/cancel.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+} */
+
+.add-mor-grops {
+    float: right;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: right;
+    color: #2F6CE5;
+    margin-top: 20px;
+}
+
+.anker {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* ?======================= SIGIN IN PAG CSS END ==================== */
